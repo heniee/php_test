@@ -1,0 +1,28 @@
+create table board (
+	bno int(10)  not null auto_increment primary key,
+    title varchar(100) not null,
+    content text not null,
+    userid varchar(20) not null,
+    date datetime not null,
+    view int(10) not null default 0,
+    ref int(10) not null,
+    step int(10) not null default 0 ,
+    depth int(10) not null default 0 
+);
+
+
+create table member(
+	 no int (10)  not null auto_increment primary key,
+	 userid varchar(20)not null,
+     userpw varchar(100) not null,
+     username varchar(20) not null,
+     date date not null
+);
+
+create table comment(
+	 cno int (10)  not null auto_increment primary key,
+     userid varchar(20)not null,
+     content text not null,
+     date date not null,
+     bno int(10)
+);
