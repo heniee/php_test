@@ -35,7 +35,6 @@ include 'index.php';
                     <td><input type="password" id="userpw" name="userpw" placeholder="비밀번호" required></td>
                 </tr>
         </table>
-      
 
         <div class="btnset">
                 <button type="button" class="btnSubmit" onclick="loginChk()">로그인</button>
